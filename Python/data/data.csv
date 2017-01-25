@@ -1,8 +1,0 @@
-"Date","AQS_SITE_ID","POC","Daily Max 8-hour CO Concentration","UNITS","DAILY_AQI_VALUE","DAILY_OBS_COUNT","PERCENT_COMPLETE","AQS_PARAMETER_CODE","AQS_PARAMETER_DESC","CBSA_CODE","CBSA_NAME","STATE_CODE","STATE","COUNTY_CODE","COUNTY","SITE_LATITUDE","SITE_LONGITUDE"
-"01/01/2003","060010005","1","1","ppm","11","19","79.0000","42101","Carbon monoxide","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.7986","-122.2684"
-"01/02/2003","060010005","1","1.7","ppm","19","24","100.0000","42101","Carbon monoxide","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.7986","-122.2684"
-"01/03/2003","060010005","1","2.1","ppm","24","24","100.0000","42101","Carbon monoxide","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.7986","-122.2684"
-"01/04/2003","060010005","1","2.5","ppm","28","24","100.0000","42101","Carbon monoxide","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.7986","-122.2684"
-"01/05/2003","060010005","1","1.7","ppm","19","24","100.0000","42101","Carbon monoxide","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.7986","-122.2684"
-"01/06/2003","060010005","1","1.7","ppm","19","24","100.0000","42101","Carbon monoxide","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.7986","-122.2684"
-"01/07/2003","060010005","1","2.6","ppm","30","24","100.0000","42101","Carbon monoxide","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.7986","-122.2684"
