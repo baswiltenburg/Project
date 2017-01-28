@@ -1,8 +1,0 @@
-"Date","AQS_SITE_ID","POC","Daily Mean PM2.5 Concentration","UNITS","DAILY_AQI_VALUE","DAILY_OBS_COUNT","PERCENT_COMPLETE","AQS_PARAMETER_CODE","AQS_PARAMETER_DESC","CBSA_CODE","CBSA_NAME","STATE_CODE","STATE","COUNTY_CODE","COUNTY","SITE_LATITUDE","SITE_LONGITUDE"
-"01/01/2016","060010007","3","9.9","ug/m3 LC","41","1","100.0000","88101","PM2.5 - Local Conditions","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.687526","-121.784217"
-"01/02/2016","060010007","3","12.9","ug/m3 LC","53","1","100.0000","88101","PM2.5 - Local Conditions","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.687526","-121.784217"
-"01/03/2016","060010007","3","22.3","ug/m3 LC","72","1","100.0000","88101","PM2.5 - Local Conditions","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.687526","-121.784217"
-"01/04/2016","060010007","3","17","ug/m3 LC","61","1","100.0000","88101","PM2.5 - Local Conditions","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.687526","-121.784217"
-"01/05/2016","060010007","3","5","ug/m3 LC","21","1","100.0000","88101","PM2.5 - Local Conditions","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.687526","-121.784217"
-"01/06/2016","060010007","3","4","ug/m3 LC","17","1","100.0000","88101","PM2.5 - Local Conditions","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.687526","-121.784217"
-"01/07/2016","060010007","3","9.5","ug/m3 LC","40","1","100.0000","88101","PM2.5 - Local Conditions","41860","San Francisco-Oakland-Hayward, CA","06","California","001","Alameda","37.687526","-121.784217"
