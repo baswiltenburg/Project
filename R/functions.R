@@ -1,14 +1,6 @@
-#install.packages("sp")
-#install.packages("raster")
-#install.packages("gstat")
 
-library(raster)
-library(sp)
-library(gstat)
-
-###
 # Convert data (.cvs) to SpatialPointDataFrame
-test_cvs <- read.csv("ad_viz_plotval_data.csv")
+test_cvs <- read.csv("Python/output/preprocessing_results.csv")
 
 substract <- test_cvs[test_cvs$Date == "01/11/2003",]
 
@@ -45,3 +37,4 @@ image(idw_cal, xlim=c(-123, -117), ylim=c(34, 41.2))
 map("state", lwd=1, add=T)
 map("county", lty=3, lwd=0.5, add=T)
 #points(spdf, pch=21, bg="blue")
+

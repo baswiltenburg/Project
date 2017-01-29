@@ -7,7 +7,7 @@ def preprocessing():
   
     a=[] #list with header elements
     b=[] #list with data
-    readfile=open('data/data.csv', 'r')
+    readfile=open('Python/data/data.csv', 'r')
     n = "No Data"    
     for line in readfile: 
         l = line.split(",")
@@ -38,15 +38,15 @@ def preprocessing():
     df = pd.DataFrame(dic)
     df_r = pandas2ri.py2ri(df)
     
-    output = "output"
+    output = "Python/output"
     if not os.path.exists(output):
         os.makedirs(output)
-    with open("output/preprocessing_results.csv","w") as f:
+    with open("Python/output/preprocessing_results.csv","w") as f:
         f.write(",".join(dic.keys()) + "\n")
         for row in zip(*dic.values()):
             f.write(",".join(str(n) for n in row) + "\n")
-        f.close()   
-            
+        f.close() 
+        
 
 
 
