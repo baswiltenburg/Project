@@ -4,11 +4,16 @@
 #install.packages("raster")
 #install.packages("gstat")
 
+library(rgdal)
 library(raster)
 library(sp)
 library(gstat)
-source("R/functions2.R")
+library(rPython)
+library(maps)
+source("R/functions.R")
 
 # Run the python script which do all the pro-processing work. 
-system("python Python/main.py")
-dataframe <- Create_Spatial_Point_Dataframe()
+system("python Python/preprocessing.py")
+
+# Run the R script which interpolate air pollution during the whole wildfire period
+Interpolate_pollution() 
