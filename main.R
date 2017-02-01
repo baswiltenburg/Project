@@ -4,6 +4,9 @@
 #install.packages("raster")
 #install.packages("gstat")
 
+library(shiny)
+library(datasets)
+library(leaflet)
 library(rgdal)
 library(raster)
 library(sp)
