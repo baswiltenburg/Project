@@ -57,9 +57,10 @@ Interpolate_pollution <- function(){
 rasters <- Interpolate_pollution()
 
 
-mapcolor <- colorBin(palette = c('green','yellow', 'red'), domain = c(0:35), bins = 50, pretty = FALSE, na.color = NA)
-legendcolor <- colorBin(palette = c('green', 'yellow', 'red'), domain = c(0:35),  bins =8, pretty = FALSE, na.color = NA)
-maxcolor <- colorBin(palette = c('red'), domain = c(35:110),  bins =2, pretty = FALSE, na.color = NA)
+mapcolor <- colorBin(palette = c('white', 'green','yellow', 'orange'), domain = c(0:35), bins = 50, pretty = FALSE, na.color = NA)
+legendcolor <- colorBin(palette = c('white', 'green', 'yellow', 'orange'), domain = c(0:35),  bins =5, pretty = TRUE, na.color = NA)
+maxcolor <- colorBin(palette = c('orange', 'red'), domain = c(35:110),  bins =3, pretty = FALSE, na.color = NA)
+legendmaxcolor <- colorBin(palette = c('orange', 'red'), domain = c(35:110),  bins =4, pretty = TRUE, na.color = NA)
 
 ui <- shinyUI(fluidPage(
   # Application title
@@ -82,7 +83,8 @@ server <- shinyServer(function(input, output){
         addProviderTiles("Stamen.TonerLite") %>% 
         #addTiles() %>%
         setView(lng=-120, lat = 37, zoom = 6) %>%
-        addLegend(position = "bottomright", pal = legendcolor, values = c(0:35), title = "Legend",labFormat = labelFormat(suffix = ' ug/m³'))
+        addLegend(position = "bottomright", pal = legendcolor, values = c(0:35), title = "Legend",labFormat = labelFormat(suffix = ' ug/m³'))%>%
+        addLegend(position = "bottomright", pal = legendmaxcolor, values = c(35:110), labFormat = labelFormat(suffix = ' ug/m³')) 
     )
     
   })
@@ -90,9 +92,9 @@ server <- shinyServer(function(input, output){
     
     leafletProxy("map", data = rasters@layers[[input$days]]) %>%
     #clearGroup(group = "Pollution")%>%
-    addRasterImage(rasters@layers[[input$days]], colors = mapcolor, opacity = 0.5, layerId = input$days, group = "Pollution")  %>%
-    addRasterImage(rasters@layers[[input$days]], colors = maxcolor, opacity = 1)  %>%
-    addLayersControl(baseGroups = c("Open Street Map"),overlayGroups = c("Pollution"), options = layersControlOptions(collapsed = FALSE)) 
+    addRasterImage(rasters@layers[[input$days]], colors = mapcolor, opacity = 1, layerId = input$days, group = "Pollution")  %>%
+    addRasterImage(rasters@layers[[input$days]], colors = maxcolor, opacity = 1, group = "Pollution")  %>%
+    addLayersControl(baseGroups = c("Basemap"),overlayGroups = c("Pollution"), options = layersControlOptions(collapsed = FALSE)) 
   })
   
   observe({#Observer to show Popups on click
